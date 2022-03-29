@@ -5,7 +5,7 @@ Mock.mock("/api/login", "post", function(config){
     console.log('转换后的参数', obj)
     let user = obj.user
     let pw = obj.pw
-    if(user === "admin" && pw === 123456){
+    if(user === "admin" && pw == 123456){
         return {
             status: 200,
             message: "success",
